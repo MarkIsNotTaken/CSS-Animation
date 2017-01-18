@@ -1,0 +1,36 @@
+#rotate{
+	transform: rotate(100deg);
+}
+
+#skew{
+	transform: skew(36deg, 72deg);
+}
+
+#all{
+	transform: rotate(86deg);
+	transform: skew(26deg, 89deg);
+}
+
+#animate {
+	animation-name: animato;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animato {
+	0% { transform: rotate(0deg);
+		background-color: red;
+	}
+	25% { transform: rotate(90deg);
+		background-color: pink;
+	}
+	50% { transform: rotate(360deg);
+		background-color: orange;
+	}
+	75% { transform: rotate(90deg);
+		background-color: purple;
+	}
+	100% { transform: rotate(0deg);
+		background-color: yellow;
+	}
+}
