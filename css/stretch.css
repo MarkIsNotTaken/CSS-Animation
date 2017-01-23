@@ -1,0 +1,29 @@
+div.strotch{
+	border: 2px solid #000;
+  	width: 100px;
+  	height: 200px;
+  	display: block;
+  	margin: 10px;
+}
+
+#stretch:hover {
+	animation-name: snotch;
+	animation-iteration-count: infinite;
+	animation-duration: 4s;
+	animation-direction: alternate;
+} 
+
+@keyframes snotch {
+	0%{
+		background-color: green;
+	}
+	33%{
+		background-color: pink;
+	}
+	67%{
+		background-color: orange;
+	}
+	100%{
+		background-color: blue;
+	}
+}
